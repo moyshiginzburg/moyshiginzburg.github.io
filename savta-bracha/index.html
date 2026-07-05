@@ -255,8 +255,11 @@
 
         /* Specific fix for vertical video (Shorts) to prevent it from being too huge */
         .video-container.vertical-video {
-            max-width: 320px;
+            max-width: 260px;
             margin: 0 auto 20px auto;
+            padding-bottom: 0;
+            aspect-ratio: 9 / 16;
+            height: auto;
         }
 
         .video-container {
@@ -385,8 +388,8 @@
         }
 
         .expandable-section.open .expandable-content {
-            max-height: 1000px;
-            /* Or a sufficiently large value */
+            max-height: 2500px;
+            /* Increased to prevent cutting off content */
             transition: max-height 0.5s ease-in;
         }
 
@@ -567,7 +570,7 @@
                     <!-- YouTube Short Video about Yehuda -->
                     <div class="source-card">
                         <h3>🎥 כמה סיפורים קצרים על יהודה</h3>
-                        <div class="video-container vertical-video" style="padding-bottom: 177.78%;">
+                        <div class="video-container vertical-video">
                             <!-- 9:16 aspect ratio for Shorts -->
                             <iframe src="https://www.youtube.com/embed/y5hKfT6byaU" title="כמה סיפורים קצרים על יהודה"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
