@@ -7,3 +7,5 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Replaced Google Drive PDF links in `savta-bracha/index.html` with local paths pointing to the files in `savta-bracha/documents/` folder.
 - Configured local PDF links for previews (iframes) and download/view buttons.
+- Removed PDF previews (iframes) for the Garsin family book.
+- Renamed Garsin family book buttons to "חלק 1" and "חלק 2" instead of "הורדת חלק X".
